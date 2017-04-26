@@ -33,6 +33,9 @@
     self.windowController = [[WindowController alloc] initWithURL: kStartPage];
     [self.windowController setWindowParams];
     [self.windowController showWindow:self];
+    //set above all others
+    self.windowController.window.level = CGWindowLevelForKey(kCGMaximumWindowLevelKey);
+
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

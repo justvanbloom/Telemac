@@ -26,6 +26,7 @@ video,
     transition: opacity .5s ease-in-out;
     transition-delay: 0;
     z-index: 100;
+    min-height: 21%;
 }
 .test {
     width: 80%;
