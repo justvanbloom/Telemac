@@ -1,0 +1,5 @@
+language: objective-c
+xcode_project: Telemac.xcworkspace
+xcode_scheme: Telemac
+osx_image: xcode9.3
+podfile: Podfile
